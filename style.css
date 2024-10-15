@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0, 64, 255, 0.126);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color:black;
+    text-align:center ;
+}
+
+.projects 
+{ display:flex; 
+  flex-wrap:wrap; 
+} 
+.project {
+  width: 30%;
+  margin: 10px;
+  padding: 20px 10px;
+  background: rgb(9, 83, 74); /* pick a color */
+  border-radius: 25%;
+}
+.project img{
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid rgb(14, 154, 201); /* choose a color */
+  display: block;
+  margin: auto;
+  }
