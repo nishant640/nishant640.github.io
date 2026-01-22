@@ -9,38 +9,38 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #eef2f5;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f5f8;
             color: #243447;
         }
 
         #container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 60px auto;
-            background-color: #ffffff;
-            padding: 30px 40px;
+            background: white;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         h1 {
-            color: #1a5276;
+            color: #1f4e79;
         }
 
         h2 {
-            margin-top: 30px;
-            color: #1a5276;
+            margin-top: 40px;
+            color: #1f4e79;
         }
 
-        p {
-            line-height: 1.6;
+        a {
+            color: #1f6fb2;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        #repo-link {
-            background-color: #f0f6fb;
-            padding: 10px 15px;
-            border-left: 4px solid #1a5276;
-            margin: 20px 0;
+        a:hover {
+            text-decoration: underline;
+            color: #144b7a;
         }
 
         ul {
@@ -52,14 +52,11 @@
             margin: 12px 0;
         }
 
-        li a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #1a5276;
-        }
-
-        li a:hover {
-            color: #5499c7;
+        .repo {
+            background: #f0f4f8;
+            padding: 12px;
+            border-left: 4px solid #1f6fb2;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -75,11 +72,9 @@
             We learn how to create simple websites using HTML and CSS.
         </p>
 
-        <div id="repo-link">
+        <div class="repo">
             GitHub Repository:
-            <a href="https://github.com/nishant640/nishant640.github.io/tree/main/csce242"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a href="https://github.com/nishant640/nishant640.github.io" target="_blank" rel="noopener noreferrer">
                 View Code
             </a>
         </div>
@@ -87,7 +82,12 @@
         <h2>Assignments</h2>
         <ul>
             <li>
-                <a href="assignments/assignment2/">
+                <a href="/csce242/assignments/assignment1/">
+                    Assignment 1
+                </a>
+            </li>
+            <li>
+                <a href="/csce242/assignments/assignment2/">
                     Assignment 2
                 </a>
             </li>
