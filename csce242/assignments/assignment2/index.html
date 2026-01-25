@@ -1,129 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Life</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Life</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("./background.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      color: #1f2937;
+    }
 
-        #content {
-            background-color: rgba(255, 255, 255, 0.9);
-            width: 80%;
-            margin: 40px auto;
-            padding: 25px;
-            border-radius: 8px;
-        }
+    #content {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+    }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
+    h1 {
+      color: #1d4ed8;
+    }
 
-        h2 {
-            color: #34495e;
-        }
+    h2 {
+      color: #2563eb;
+      margin-top: 30px;
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    p {
+      line-height: 1.6;
+    }
 
-        img {
-            width: 45%;
-            margin: 10px;
-            padding: 5px;
-            border: 2px solid #2c3e50;
-        }
+    #images {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+    img {
+      width: 45%;
+      margin: 10px 0;
+      border: 3px solid #1d4ed8;
+      padding: 5px;
+      border-radius: 6px;
+    }
 
-        th, td {
-            border: 1px solid #2c3e50;
-            padding: 10px;
-            text-align: center;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
 
-        th {
-            background-color: #2c3e50;
-            color: white;
-        }
+    th, td {
+      border: 2px solid #1d4ed8;
+      padding: 10px;
+      text-align: center;
+    }
 
-        td {
-            background-color: #ecf0f1;
-        }
-    </style>
+    th {
+      background-color: #1d4ed8;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e0e7ff;
+    }
+  </style>
 </head>
+
 <body>
+  <div id="content">
 
-    <div id="content">
-        <h1>College Life</h1>
+    <h1>College Life</h1>
+    <h2>A Day in a Student's Life</h2>
 
-        <h2>Life as a College Student</h2>
+    <p>
+      College life is a time of growth, learning, and independence. Students
+      balance academics, extracurricular activities, and personal responsibilities
+      as they prepare for their future careers.
+    </p>
 
-        <p>
-            College life is a new experience for many students. It teaches responsibility,
-            time management, and independence. Students attend classes, complete assignments,
-            and learn how to balance academics with personal life.
-        </p>
+    <p>
+      Beyond classes, students join clubs, organizations, or participate in campus
+      events. These experiences help students grow socially and personally while
+      building valuable skills.
+    </p>
 
-        <p>
-            College is also a great place to meet new people and try new things. Many students
-            join clubs, organizations, or participate in campus events. These experiences help
-            students grow socially and personally.
-        </p>
-
-        <!-- FIXED IMAGE PATHS -->
-        <img src="./image1.jpeg" alt="College campus">
-        <img src="./image2.jpeg" alt="Students studying">
-
-        <h2>Weekly Schedule</h2>
-
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Activity</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>Classes</td>
-                <td>9 AM – 3 PM</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>Study</td>
-                <td>1 PM – 4 PM</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>Classes</td>
-                <td>9 AM – 3 PM</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>Group Work</td>
-                <td>2 PM – 5 PM</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>Free / Catch-up</td>
-                <td>—</td>
-            </tr>
-        </table>
+    <div id="images">
+      <img src="image1.jpeg" alt="College campus">
+      <img src="image2.jpeg" alt="Students studying">
     </div>
 
+    <h2>Weekly Schedule</h2>
+
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Activity</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>Classes</td>
+        <td>9 AM – 3 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Study</td>
+        <td>1 PM – 4 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Classes</td>
+        <td>9 AM – 3 PM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Group Work</td>
+        <td>2 PM – 5 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Free / Catch-up</td>
+        <td>—</td>
+      </tr>
+    </table>
+
+  </div>
 </body>
 </html>
