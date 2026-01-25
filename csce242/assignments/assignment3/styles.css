@@ -7,17 +7,20 @@
 
 /* Header */
 header {
-  background-color: #dde7f0;
-  padding: 20px;
+  background-color: #e9ecef;
+  padding: 25px;
   text-align: center;
-  color: #2c3e50;
+}
+
+header h1 {
+  color: #1f2933;
 }
 
 /* Nav */
 nav ul {
   display: flex;
   list-style: none;
-  background-color: #4a6fa5;
+  background-color: #2f3e46;
 }
 
 nav li {
@@ -27,32 +30,38 @@ nav li {
 
 nav a {
   display: block;
-  padding: 12px;
-  color: white;
+  padding: 14px;
+  color: #f1f5f9;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #3b5c88;
+  background-color: #354f52;
 }
 
 /* Important text */
 .important {
-  background-color: #eef3f8;
+  background-color: #f8f9fa;
   padding: 20px;
-  color: #2c3e50;
+  color: #1f2933;
 }
 
 /* Top cards */
 .cards {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  background-color: #eef3f8;
+  padding: 25px;
+  background-color: #f8f9fa;
 }
 
-.cards article {
-  text-align: center;
+.cards article h3 {
+  margin-bottom: 10px;
+  color: #1f2933;
+}
+
+/* Placeholder images */
+.cards img {
+  background-color: #84a98c;
 }
 
 /* Ideas section */
@@ -65,29 +74,30 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
+  gap: 20px;
 }
 
 /* Alternating rows */
 .idea:nth-child(odd) {
-  background-color: #6b8fa6;
-  color: white;
+  background-color: #52796f;
+  color: #f1f5f9;
 }
 
 .idea:nth-child(even) {
-  background-color: #c9d9e3;
-  color: #2c3e50;
+  background-color: #cad2c5;
+  color: #1f2933;
 }
 
 /* Footer */
 footer {
-  background-color: #4a6fa5;
-  color: white;
+  background-color: #2f3e46;
+  color: #f1f5f9;
   text-align: center;
-  padding: 15px;
+  padding: 18px;
 }
 
-/* Small screen */
+/* Mobile */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -96,6 +106,7 @@ footer {
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .idea {
