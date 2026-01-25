@@ -1,54 +1,78 @@
-body#page {
-  background-color: #eef2ff;
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f6ec; /* cream */
   color: #1f2933;
 }
 
-#container {
-  background-color: #ffffff;
-  width: 70%;
-  margin: 40px auto;
-  padding: 25px;
-  border-radius: 8px;
+/* HEADER */
+.header {
+  background-color: #1e40af; /* blue */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-#course-title {
-  color: #1d4ed8;
-}
-
-#name {
-  margin-top: 0;
-}
-
-#description {
-  color: #374151;
-}
-
-#repo a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#repo a:hover {
-  text-decoration: underline;
-}
-
-#assignment-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#assignment-list li {
+.header h1 {
   margin-bottom: 10px;
 }
 
-#assignment-list a {
-  color: #0f766e;
-  text-decoration: none;
-  font-size: 18px;
+.name {
+  font-weight: bold;
 }
 
-#assignment-list a:hover {
-  text-decoration: underline;
+.desc {
+  margin-top: 10px;
+}
+
+/* MAIN */
+.main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main h2 {
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  text-decoration: none;
+  color: #1f2933;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
