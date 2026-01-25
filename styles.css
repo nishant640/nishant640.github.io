@@ -1,78 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
+/* basic reset */
 body {
-  background-color: #f9f6ec; /* cream */
-  color: #1f2933;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f3e9; /* cream */
+  color: #222;
 }
 
-/* HEADER */
-.header {
-  background-color: #1e40af; /* blue */
+/* header */
+header {
+  background-color: #2f5fa7; /* blue */
   color: white;
-  text-align: center;
   padding: 40px 20px;
 }
 
-.header h1 {
-  margin-bottom: 10px;
+header h1 {
+  margin: 0;
 }
 
 .name {
-  font-weight: bold;
+  margin-top: 8px;
+  font-size: 16px;
 }
 
-.desc {
-  margin-top: 10px;
+/* main content */
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-/* MAIN */
-.main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
+.intro {
+  margin-bottom: 40px;
+  font-size: 16px;
 }
 
-.main h2 {
+h2 {
   margin-bottom: 20px;
-  color: #1e40af;
 }
 
-/* CARDS */
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+/* assignments list */
+.assignments {
+  list-style: none;
+  padding: 0;
 }
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 280px;
+.assignments li {
+  margin-bottom: 15px;
+}
+
+.assignments a {
   text-decoration: none;
-  color: #1f2933;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #2f5fa7;
+  font-size: 16px;
 }
 
-.card h3 {
-  color: #1e40af;
-  margin-bottom: 10px;
+.assignments a:hover {
+  text-decoration: underline;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-}
-
-/* FOOTER */
-.footer {
-  background-color: #1e40af;
+/* footer */
+footer {
+  background-color: #2f5fa7;
   color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 20px;
+  margin-top: 80px;
 }
