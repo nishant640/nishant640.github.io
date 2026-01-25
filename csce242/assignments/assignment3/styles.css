@@ -7,16 +7,17 @@
 
 /* Header */
 header {
-  background-color: #f3f3d9;
+  background-color: #dde7f0;
   padding: 20px;
   text-align: center;
+  color: #2c3e50;
 }
 
 /* Nav */
 nav ul {
   display: flex;
   list-style: none;
-  background-color: #e28b8b;
+  background-color: #4a6fa5;
 }
 
 nav li {
@@ -31,10 +32,15 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  background-color: #3b5c88;
+}
+
 /* Important text */
 .important {
-  background-color: #f3f3d9;
+  background-color: #eef3f8;
   padding: 20px;
+  color: #2c3e50;
 }
 
 /* Top cards */
@@ -42,7 +48,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #f3f3d9;
+  background-color: #eef3f8;
 }
 
 .cards article {
@@ -62,18 +68,20 @@ nav a {
   padding: 20px;
 }
 
+/* Alternating rows */
 .idea:nth-child(odd) {
-  background-color: #5f8f8f;
+  background-color: #6b8fa6;
   color: white;
 }
 
 .idea:nth-child(even) {
-  background-color: #b9d1c9;
+  background-color: #c9d9e3;
+  color: #2c3e50;
 }
 
 /* Footer */
 footer {
-  background-color: #e28b8b;
+  background-color: #4a6fa5;
   color: white;
   text-align: center;
   padding: 15px;
