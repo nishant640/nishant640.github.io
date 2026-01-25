@@ -1,68 +1,52 @@
-/* basic reset */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f3e9; /* cream */
-  color: #222;
 }
 
-/* header */
-header {
-  background-color: #2f5fa7; /* blue */
-  color: white;
-  padding: 40px 20px;
+/* top banner */
+.banner {
+  padding: 40px;
+  border-bottom: 2px solid #000;
 }
 
-header h1 {
+.banner h1 {
   margin: 0;
 }
 
-.name {
-  margin-top: 8px;
-  font-size: 16px;
+.banner p {
+  margin-top: 10px;
 }
 
 /* main content */
-main {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 20px;
+.content {
+  max-width: 700px;
+  margin: 40px;
 }
 
-.intro {
-  margin-bottom: 40px;
-  font-size: 16px;
+.description {
+  margin-bottom: 30px;
 }
 
-h2 {
-  margin-bottom: 20px;
+/* assignment list */
+ul {
+  padding-left: 20px;
 }
 
-/* assignments list */
-.assignments {
-  list-style: none;
-  padding: 0;
+li {
+  margin-bottom: 10px;
 }
 
-.assignments li {
-  margin-bottom: 15px;
-}
-
-.assignments a {
+a {
   text-decoration: none;
-  color: #2f5fa7;
-  font-size: 16px;
 }
 
-.assignments a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* footer */
 footer {
-  background-color: #2f5fa7;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 80px;
+  margin: 40px;
+  border-top: 1px solid #000;
+  padding-top: 15px;
 }
