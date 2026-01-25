@@ -1,85 +1,97 @@
-/* Basic reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f6e9; /* cream */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #f8f6e9;
-    padding: 30px;
+  background-color: #f3f3d9;
+  padding: 20px;
+  text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-/* Navigation */
-nav {
-    background-color: #4a6fa5; /* blue */
-}
-
+/* Nav */
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 10px 20px;
+  display: flex;
+  list-style: none;
+  background-color: #e28b8b;
 }
 
 nav li {
-    margin-right: 30px;
+  flex: 1;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
 }
 
-/* Important text section */
+/* Important text */
 .important {
-    padding: 20px;
+  background-color: #f3f3d9;
+  padding: 20px;
 }
 
-/* Titles section */
-.titles {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 20px;
-    flex-wrap: wrap;
+/* Top cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f3f3d9;
 }
 
-/* Individual boxes */
-.box {
-    background-color: #e3e3e3;
-    padding: 15px;
-    text-align: center;
+.cards article {
+  text-align: center;
 }
 
-/* Images */
-.box img {
-    width: 200px;
-    height: 300px;
+/* Ideas section */
+.ideas {
+  display: flex;
+  flex-direction: column;
+}
+
+.idea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.idea:nth-child(odd) {
+  background-color: #5f8f8f;
+  color: white;
+}
+
+.idea:nth-child(even) {
+  background-color: #b9d1c9;
 }
 
 /* Footer */
 footer {
-    background-color: #4a6fa5; /* blue */
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #e28b8b;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
-/* Small screen layout */
-@media (max-width: 800px) {
-    nav ul {
-        flex-direction: column;
-    }
+/* Small screen */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
 
-    .titles {
-        flex-direction: column;
-        align-items: center;
-    }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .idea {
+    flex-direction: column;
+    text-align: center;
+  }
 }

@@ -3,41 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSCE 242: Web Applications</title>
+  <title>Layout with Flex</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-  <header class="header">
-    <h1>CSCE 242: Web Applications</h1>
-    <p class="name">Nishant Chinnasami</p>
-    <p class="desc">This page serves as a portal to all my assignments for CSCE 242.</p>
+<body>
+  <header>
+    <h1>Layout with Flex</h1>
   </header>
 
-  <main class="main">
-    <h2>Assignments</h2>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Staff</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <div class="cards">
-      <a class="card" href="csce242/assignments/assignment1/">
-        <h3>Assignment 1</h3>
-        <p>Basic HTML structure and setup.</p>
-      </a>
+  <section class="important">
+    <p>This is very important text</p>
+  </section>
 
-      <a class="card" href="csce242/assignments/assignment2/">
-        <h3>Assignment 2</h3>
-        <p>CSS styling, colors, and layout basics.</p>
-      </a>
+  <section class="cards">
+    <article>
+      <h2>Title 1</h2>
+      <img src="https://dummyimage.com/200x300/9fbfbf/ffffff&text=200x300" alt="placeholder">
+    </article>
 
-      <a class="card" href="csce242/assignments/assignment3/">
-        <h3>Assignment 3</h3>
-        <p>Flexbox page layout.</p>
-      </a>
-    </div>
+    <article>
+      <h2>Title 2</h2>
+      <img src="https://dummyimage.com/200x300/9fbfbf/ffffff&text=200x300" alt="placeholder">
+    </article>
+
+    <article>
+      <h2>Title 3</h2>
+      <img src="https://dummyimage.com/200x300/9fbfbf/ffffff&text=200x300" alt="placeholder">
+    </article>
+
+    <article>
+      <h2>Title 4</h2>
+      <img src="https://dummyimage.com/200x300/9fbfbf/ffffff&text=200x300" alt="placeholder">
+    </article>
+  </section>
+
+  <main class="ideas">
+    <article class="idea">
+      <h3>Idea 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      <img src="https://dummyimage.com/200x200/6f8f8f/ffffff&text=200x200" alt="placeholder">
+    </article>
+
+    <article class="idea">
+      <h3>Idea 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      <img src="https://dummyimage.com/200x200/6f8f8f/ffffff&text=200x200" alt="placeholder">
+    </article>
+
+    <article class="idea">
+      <h3>Idea 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      <img src="https://dummyimage.com/200x200/6f8f8f/ffffff&text=200x200" alt="placeholder">
+    </article>
   </main>
 
-  <footer class="footer">
-    © 2026 Nishant Chinnasami
+  <footer>
+    <p>&copy; 2026 Nishant Chinnasami</p>
   </footer>
-
 </body>
 </html>
