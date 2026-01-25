@@ -1,0 +1,85 @@
+/* Basic reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f6e9; /* cream */
+}
+
+/* Header */
+header {
+    background-color: #f8f6e9;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #4a6fa5; /* blue */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Important text section */
+.important {
+    padding: 20px;
+}
+
+/* Titles section */
+.titles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual boxes */
+.box {
+    background-color: #e3e3e3;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Images */
+.box img {
+    width: 200px;
+    height: 300px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a6fa5; /* blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Small screen layout */
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .titles {
+        flex-direction: column;
+        align-items: center;
+    }
+}
