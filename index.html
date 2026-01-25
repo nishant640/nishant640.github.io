@@ -3,40 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSCE 242 Assignments</title>
+  <title>CSCE 242</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>CSCE 242: Web Applications</h1>
-    <p class="name">Nishant Chinnasami</p>
-    <p class="description">
-      This page serves as a portal to all my assignments for CSCE 242.
-    </p>
-  </header>
+  <div id="page">
 
-  <main>
-    <section>
+    <header id="header">
+      <h1>CSCE 242: Web Applications</h1>
+
+      <p id="name">Nishant Chinnasami</p>
+
+      <p id="desc">
+        This page serves as a portal to all my assignments for CSCE 242.
+      </p>
+
+      <p id="repo">
+        GitHub Repo:
+        <a
+          href="https://github.com/nishant640/nishant640.github.io"
+          target="_blank"
+          rel="noopener"
+        >
+          https://github.com/nishant640/nishant640.github.io
+        </a>
+      </p>
+    </header>
+
+    <main id="content">
       <h2>Assignments</h2>
 
-      <div class="cards">
-        <article class="card">
-          <a href="assignments/assignment1/index.html">
-            <h3>Assignment 1</h3>
-          </a>
-          <p>Basic HTML structure and page setup.</p>
-        </article>
+      <ul id="assignment-list">
+        <li>
+          <a href="assignments/assignment1/index.html">Assignment 1</a>
+        </li>
+        <li>
+          <a href="assignments/assignment2/index.html">Assignment 2</a>
+        </li>
+      </ul>
+    </main>
 
-        <article class="card">
-          <a href="assignments/assignment2/index.html">
-            <h3>Assignment 2</h3>
-          </a>
-          <p>CSS styling, colors, and layout basics.</p>
-        </article>
+    <footer id="footer">
+      <p>&copy; 2026 Nishant Chinnasami</p>
+    </footer>
 
-        <article class="card">
-          <a href="csce242/assignments/assignment3/index.html">
-            <h3>Assignment 3</h3>
-          </a>
-          <p>Responsive
+  </div>
+</body>
+</html>
