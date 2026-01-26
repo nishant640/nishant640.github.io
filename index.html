@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Web Applications | CSCE 242</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>Web Applications | CSCE 242</h1>
-    <p>Nishant Chinnasami</p>
-  </header>
 
-  <main>
+<header>
+  <h1>Web Applications | CSCE 242</h1>
+  <p class="name">Nishant Chinnasami</p>
+  <p>
+    <a class="repo-link"
+       href="https://github.com/nishant640/nishant640.github.io"
+       target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+</header>
+
+<main>
+
+  <!-- ASSIGNMENTS -->
+  <section class="section">
     <h2>Assignments</h2>
 
-    <section class="cards">
-      <article class="card">
-        <img src="csce242/images/placeholder.png" alt="Assignment 1 screenshot">
+    <div class="card-container">
+
+      <div class="card">
+        <img src="images/placeholder.png" alt="Assignment 1 screenshot">
         <h3>HTML Basics</h3>
         <p>Starter page using core HTML elements and semantic markup.</p>
-        <a href="csce242/assignments/assignment1/index.html">Open</a>
-      </article>
+        <a class="btn" href="assignments/assignment1/index.html">Open</a>
+      </div>
 
-      <article class="card">
-        <img src="csce242/images/placeholder.png" alt="Assignment 2 screenshot">
+      <div class="card">
+        <img src="images/placeholder.png" alt="Assignment 2 screenshot">
         <h3>CSS Basics</h3>
         <p>Applied CSS styling, spacing, and visual hierarchy.</p>
-        <a href="csce242/assignments/assignment2/index.html">Open</a>
-      </article>
+        <a class="btn" href="assignments/assignment2/index.html">Open</a>
+      </div>
 
-      <article class="card">
-        <img src="csce242/images/placeholder.png" alt="Assignment 3 screenshot">
+      <div class="card">
+        <img src="images/placeholder.png" alt="Assignment 3 screenshot">
         <h3>Page Layout</h3>
         <p>Responsive layout using Flexbox and media queries.</p>
-        <a href="csce242/assignments/assignment3/index.html">Open</a>
-      </article>
-    </section>
+        <a class="btn" href="assignments/assignment3/index.html">Open</a>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
     <h2>Projects</h2>
 
-    <section class="cards">
-      <article class="card">
-        <img src="csce242/images/placeholder.png" alt="Project Part 1 screenshot">
-        <h3>Project Part 1</h3>
-        <p>Initial project topic proposal (PDF).</p>
-        <a href="projects/part1/SimpleShop_Part1.pdf" target="_blank">Open PDF</a>
-      </article>
-    </section>
-  </main>
+    <div class="card-container">
 
-  <footer>
-    <p>&copy; 2026 CSCE 242</p>
-  </footer>
+      <div class="card">
+        <img src="images/placeholder.png" alt="Project screenshot">
+        <h3>Project Part 1 – Topic PDF</h3>
+        <p>Initial project proposal outlining the topic and scope.</p>
+        <a class="btn"
+           href="../projects/part1/SimpleShop_Part1.pdf"
+           target="_blank">
+          Open
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Nishant Chinnasami | Web Applications: CSCE 242
+</footer>
+
 </body>
 </html>
