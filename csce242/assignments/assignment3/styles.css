@@ -1,94 +1,115 @@
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f6ff;
-  color: #333;
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
   text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-bottom: 3px solid #1e5bd8;
-}
-
-header h1 {
-  color: #1e5bd8;
-}
-
-header p {
-  margin-top: 5px;
+  padding: 40px;
+  font-size: 28px;
+  color: #556b2f;
 }
 
 /* Nav */
-nav {
-  background-color: #1e5bd8;
-}
-
 nav ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
+  list-style: none;
+  background-color: #556b2f;
 }
 
-nav li {
-  margin: 10px;
-}
-
-nav a {
+nav ul li {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
   color: white;
-  text-decoration: none;
   font-weight: bold;
 }
 
-/* Layout */
+/* Main Layout */
 .container {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
-/* Main Content */
+/* Content */
 .content {
   flex: 3;
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
 }
 
 /* Sidebar */
 .sidebar {
+  flex: 2;
+  display: flex;
+  gap: 15px;
+}
+
+.card {
   flex: 1;
-  background-color: #e8efff;
+  background-color: #bdbdbd;
+  text-align: center;
+  padding: 10px;
+}
+
+.card span {
+  display: block;
+  margin-top: 120px;
+  color: white;
+}
+
+/* Ideas Section */
+.ideas {
+  padding: 30px;
+}
+
+.idea-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.idea-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.img-box {
+  width: 300px;
+  height: 200px;
+  background-color: #8f8f8f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  flex: 1;
+  background-color: #9e9e9e;
   padding: 20px;
-  border-radius: 8px;
+  color: white;
 }
 
 /* Footer */
 footer {
+  background-color: #556b2f;
+  color: white;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
-  background-color: #1e5bd8;
-  color: white;
 }
 
-/* Media Query (Small Screens) */
+/* Mobile */
 @media (max-width: 768px) {
-  nav ul {
+  .container,
+  .idea-row {
     flex-direction: column;
-    align-items: center;
   }
 
-  .container {
+  nav ul {
     flex-direction: column;
   }
 }

@@ -3,49 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 3 | Page Layout</title>
+  <title>Layout with Flex</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Assignment 3 – Page Layout</h1>
-    <p>CSCE 242 | Nishant Chinnasami</p>
-  </header>
+<header>
+  <h1>Layout with Flex</h1>
+</header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Staff</li>
+    <li>Contact Us</li>
+  </ul>
+</nav>
 
-  <main class="container">
-    <section class="content">
-      <h2>Main Content</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Mauris luctus lacus augue. Duis sed tincidunt sapien.
-      </p>
-      <p>
-        This section represents the main content area of the page.
-      </p>
-    </section>
+<main class="container">
 
-    <aside class="sidebar">
-      <h2>Sidebar</h2>
-      <p>
-        This is the sidebar. On smaller screens, it moves below
-        the main content.
-      </p>
-    </aside>
-  </main>
+  <section class="content">
+    <h2>This is not extremely important text</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+  </section>
 
-  <footer>
-    © 2026 Nishant Chinnasami | Web Applications: CSCE 242
-  </footer>
+  <aside class="sidebar">
+    <div class="card">Title 1<br><span>200 x 300</span></div>
+    <div class="card">Title 2<br><span>200 x 300</span></div>
+    <div class="card">Title 3<br><span>200 x 300</span></div>
+    <div class="card">Title 4<br><span>200 x 300</span></div>
+  </aside>
+
+</main>
+
+<section class="ideas">
+  <div class="idea-row">
+    <div class="img-box">300 x 200</div>
+    <div class="text-box">
+      <h3>Idea 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="idea-row reverse">
+    <div class="text-box">
+      <h3>Idea 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="img-box">300 x 200</div>
+  </div>
+
+  <div class="idea-row">
+    <div class="img-box">300 x 200</div>
+    <div class="text-box">
+      <h3>Idea 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nishant Chinnasami | Web Applications: CSCE 242
+</footer>
 
 </body>
 </html>
