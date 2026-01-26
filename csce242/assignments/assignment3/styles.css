@@ -7,109 +7,110 @@
 
 /* Header */
 header {
+  background-color: #e9ecef;
+  padding: 25px;
   text-align: center;
-  padding: 40px;
-  font-size: 28px;
-  color: #556b2f;
+}
+
+header h1 {
+  color: #1f2933;
 }
 
 /* Nav */
 nav ul {
   display: flex;
   list-style: none;
-  background-color: #556b2f;
+  background-color: #2f3e46;
 }
 
-nav ul li {
+nav li {
   flex: 1;
   text-align: center;
-  padding: 15px;
-  color: white;
-  font-weight: bold;
 }
 
-/* Main Layout */
-.container {
-  display: flex;
-  gap: 20px;
-  padding: 30px;
-}
-
-/* Content */
-.content {
-  flex: 3;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-  flex: 2;
-  display: flex;
-  gap: 15px;
-}
-
-.card {
-  flex: 1;
-  background-color: #bdbdbd;
-  text-align: center;
-  padding: 10px;
-}
-
-.card span {
+nav a {
   display: block;
-  margin-top: 120px;
-  color: white;
+  padding: 14px;
+  color: #f1f5f9;
+  text-decoration: none;
 }
 
-/* Ideas Section */
-.ideas {
-  padding: 30px;
+nav a:hover {
+  background-color: #354f52;
 }
 
-.idea-row {
+/* Important text */
+.important {
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #1f2933;
+}
+
+/* Top cards */
+.cards {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: space-around;
+  padding: 25px;
+  background-color: #f8f9fa;
 }
 
-.idea-row.reverse {
-  flex-direction: row-reverse;
+.cards article h3 {
+  margin-bottom: 10px;
+  color: #1f2933;
 }
 
-.img-box {
-  width: 300px;
-  height: 200px;
-  background-color: #8f8f8f;
-  color: white;
+/* Placeholder images */
+.cards img {
+  background-color: #84a98c;
+}
+
+/* Ideas section */
+.ideas {
+  display: flex;
+  flex-direction: column;
+}
+
+.idea {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
 }
 
-.text-box {
-  flex: 1;
-  background-color: #9e9e9e;
-  padding: 20px;
-  color: white;
+/* Alternating rows */
+.idea:nth-child(odd) {
+  background-color: #52796f;
+  color: #f1f5f9;
+}
+
+.idea:nth-child(even) {
+  background-color: #cad2c5;
+  color: #1f2933;
 }
 
 /* Footer */
 footer {
-  background-color: #556b2f;
-  color: white;
+  background-color: #2f3e46;
+  color: #f1f5f9;
   text-align: center;
-  padding: 15px;
-  margin-top: 30px;
+  padding: 18px;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .container,
-  .idea-row {
+  nav ul {
     flex-direction: column;
   }
 
-  nav ul {
+  .cards {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .idea {
+    flex-direction: column;
+    text-align: center;
   }
 }
