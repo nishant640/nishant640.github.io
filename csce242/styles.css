@@ -1,87 +1,122 @@
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: #f3f7ff;
+  color: #222;
 }
 
-/* Header */
+/* HEADER */
 header {
+  background-color: white;
   text-align: center;
-  padding: 25px;
-  background-color: #ffffff;
+  padding: 30px 20px;
+  border-bottom: 2px solid #dbe7ff;
 }
 
-.prof {
-  font-size: 14px;
-  margin-bottom: 5px;
+header h1 {
+  color: #1f4fd8;
+  font-size: 32px;
 }
 
-/* Main container */
-main {
+header .name {
+  margin-top: 6px;
+  color: #444;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1f4fd8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+  background-color: white;
   max-width: 1100px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 30px;
-  background-color: #ffffff;
+  border-radius: 12px;
 }
 
-/* Section titles */
-h2 {
+.section h2 {
   text-align: center;
-  margin: 25px 0;
+  margin-bottom: 30px;
+  color: #1f4fd8;
 }
 
-/* Cards layout */
-.cards {
+/* CARDS */
+.card-container {
   display: flex;
-  justify-content: center;
   gap: 25px;
-  margin-bottom: 40px;
+  justify-content: center;
 }
 
-/* Card */
+.card-container.single {
+  justify-content: center;
+}
+
 .card {
+  background-color: #eaf1ff;
   width: 300px;
-  background-color: #dbe7f6;
-  padding: 15px;
+  padding: 20px;
+  border-radius: 12px;
   text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .card h3 {
+  color: #1f4fd8;
   margin-bottom: 10px;
 }
 
-.card h3 a {
+.card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #1f4fd8;
+  color: white;
   text-decoration: none;
-  color: #000;
+  border-radius: 6px;
   font-weight: bold;
 }
 
-/* Images */
-.card img {
-  width: 100%;
-  height: 150px;
-  background-color: #bbb;
-  margin-bottom: 10px;
-  object-fit: cover;
+.btn:hover {
+  background-color: #173bb0;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
+  margin-top: 40px;
+  background-color: #1f4fd8;
+  color: white;
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-  .cards {
+/* MOBILE */
+@media (max-width: 900px) {
+  .card-container {
     flex-direction: column;
     align-items: center;
   }
