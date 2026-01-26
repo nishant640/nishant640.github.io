@@ -1,65 +1,117 @@
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Page base */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f0f6ff; /* light blue background */
+  color: #0a2540;
 }
 
-.top-header {
+/* Header */
+header {
   text-align: center;
   padding: 30px;
   background-color: #ffffff;
+  border-bottom: 3px solid #dbe7f6;
 }
 
+header h1 {
+  color: #0a3d91;
+}
+
+header p {
+  margin-top: 5px;
+  color: #4a6fa5;
+}
+
+/* Main container */
 main {
   max-width: 1200px;
   margin: 30px auto;
   background-color: #ffffff;
   padding: 30px;
+  border-radius: 10px;
 }
 
+/* Section titles */
 h2 {
-  margin: 25px 0;
   text-align: center;
+  margin: 30px 0 20px;
+  color: #0a3d91;
 }
 
+/* Card layout */
 .cards {
   display: flex;
-  gap: 25px;
   justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
+/* Individual card */
 .card {
   width: 320px;
-  background-color: #ffffff;
+  background-color: #e8f1ff; /* soft blue */
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 15px;
   text-align: center;
+  border: 1px solid #c7dbf7;
 }
 
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  background-color: #cfdcf1;
   margin-bottom: 10px;
+  border-radius: 6px;
 }
 
+.card h3 {
+  margin: 10px 0;
+  color: #0a3d91;
+}
+
+.card p {
+  font-size: 14px;
+  color: #1f3b5c;
+}
+
+/* Links */
 .card a {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: #8b0000;
+  color: #ffffff;
+  background-color: #0a3d91;
+  padding: 8px 14px;
+  border-radius: 6px;
   font-weight: bold;
 }
 
+.card a:hover {
+  background-color: #062d6f;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
+  background-color: #ffffff;
+  border-top: 3px solid #dbe7f6;
+  color: #4a6fa5;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
