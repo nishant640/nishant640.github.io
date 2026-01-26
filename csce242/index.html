@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSCE 242 Portal</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCE 242</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header>
-    <h1>CSCE 242: Web Applications</h1>
-    <p class="name">Nishant Chinnasami</p>
-    <p class="description">
-      This page serves as a portal to all my CSCE 242 assignments.
-    </p>
-  </header>
+  <body>
+    <header>
+      <p class="prof">Portia Plante</p>
+      <h1>CSCE 242: Client-Server Computing</h1>
+    </header>
 
-  <main>
-    <section>
+    <main>
+      <!-- ASSIGNMENTS -->
       <h2>Assignments</h2>
 
-      <div class="cards">
+      <section class="cards">
         <article class="card">
-          <a href="../assignments/assignment1/index.html">
-            <h3>Assignment 1</h3>
-          </a>
+          <h3>
+            <a href="assignments/assignment1/index.html">HTML Basics</a>
+          </h3>
+          <img src="images/assignment1.png" alt="Assignment 1 screenshot" />
+          <p>
+            Starter page using core HTML elements and semantic markup.
+          </p>
         </article>
 
         <article class="card">
-          <a href="../assignments/assignment2/index.html">
-            <h3>Assignment 2</h3>
-          </a>
+          <h3>
+            <a href="assignments/assignment2/index.html">CSS Basics</a>
+          </h3>
+          <img src="images/assignment2.png" alt="Assignment 2 screenshot" />
+          <p>
+            Applied CSS styling, spacing, and basic visual hierarchy.
+          </p>
         </article>
 
         <article class="card">
-          <a href="assignments/assignment3/index.html">
-            <h3>Assignment 3</h3>
-          </a>
+          <h3>
+            <a href="assignments/assignment3/index.html">Page Layout</a>
+          </h3>
+          <img src="images/assignment3.png" alt="Assignment 3 screenshot" />
+          <p>
+            Responsive layout using Flexbox and media queries.
+          </p>
         </article>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Nishant Chinnasami</p>
-  </footer>
-</body>
+      <!-- PROJECTS -->
+      <h2>Projects</h2>
+
+      <section class="cards">
+        <article class="card">
+          <h3>
+            <a href="../projects/part1/SimpleShop_Part1.pdf" target="_blank">
+              Project Part 1 – Topic PDF
+            </a>
+          </h3>
+          <img src="images/project1.png" alt="Project Part 1 screenshot" />
+          <p>
+            Initial project proposal outlining topic, goals, and structure.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 CSCE 242</p>
+    </footer>
+  </body>
 </html>
