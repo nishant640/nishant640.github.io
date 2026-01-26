@@ -3,79 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 3 | CSCE 242</title>
+  <title>Assignment 3 | Page Layout</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Web Applications | CSCE 242</h1>
-    <p class="name">Nishant Chinnasami</p>
-
-    <a
-      class="repo-link"
-      href="https://github.com/nishant640/nishant640.github.io"
-      target="_blank"
-      rel="noopener"
-    >
-      View GitHub Repository
-    </a>
+    <h1>Assignment 3 – Page Layout</h1>
+    <p>CSCE 242 | Nishant Chinnasami</p>
   </header>
 
-  <main>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- ASSIGNMENTS -->
-    <section class="section">
-      <h2>Assignments</h2>
-
-      <div class="card-container">
-
-        <div class="card">
-          <img src="../../images/placeholder.png" alt="Assignment 1 screenshot">
-          <h3>HTML Basics</h3>
-          <p>Starter page using core HTML elements and semantic markup.</p>
-          <a class="btn" href="../assignment1/index.html">Open</a>
-        </div>
-
-        <div class="card">
-          <img src="../../images/placeholder.png" alt="Assignment 2 screenshot">
-          <h3>CSS Basics</h3>
-          <p>Applied CSS styling, spacing, and visual hierarchy.</p>
-          <a class="btn" href="../assignment2/index.html">Open</a>
-        </div>
-
-        <div class="card">
-          <img src="../../images/placeholder.png" alt="Assignment 3 screenshot">
-          <h3>Page Layout</h3>
-          <p>Responsive layout using Flexbox and media queries.</p>
-          <a class="btn" href="../assignment3/index.html">Open</a>
-        </div>
-
-      </div>
+  <main class="container">
+    <section class="content">
+      <h2>Main Content</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris luctus lacus augue. Duis sed tincidunt sapien.
+      </p>
+      <p>
+        This section represents the main content area of the page.
+      </p>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section">
-      <h2>Projects</h2>
-
-      <div class="card-container single">
-        <div class="card">
-          <img src="../../images/placeholder.png" alt="Project Part 1 screenshot">
-          <h3>Project Part 1 – Topic PDF</h3>
-          <p>Initial project proposal and topic selection.</p>
-          <a
-            class="btn"
-            href="../../projects/part1/SimpleShop_Part1.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            Open PDF
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>
+        This is the sidebar. On smaller screens, it moves below
+        the main content.
+      </p>
+    </aside>
   </main>
 
   <footer>
