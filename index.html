@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSCE 242</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCE 242</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <div id="page">
-
-    <header id="header">
-      <h1>CSCE 242: Web Applications</h1>
-      <p id="name">Nishant Chinnasami</p>
-
-      <p id="desc">
-        This page serves as a portal to all my assignments for CSCE 242.
-      </p>
-
-      <p id="repo">
-        GitHub Repo:
-        <a
-          href="https://github.com/nishant640/nishant640.github.io"
-          target="_blank"
-          rel="noopener"
-        >
-          https://github.com/nishant640/nishant640.github.io
-        </a>
-      </p>
+  <body>
+    <header>
+      <p class="prof">Portia Plante</p>
+      <h1>CSCE 242: Client-Server Computing</h1>
     </header>
 
-    <main id="content">
+    <main>
       <h2>Assignments</h2>
 
-      <ul id="assignment-list">
-        <li>
-          <a href="https://nishant640.github.io/csce242/assignments/assignment1/">
-            Assignment 1
-          </a>
-        </li>
-        <li>
-          <a href="https://nishant640.github.io/csce242/assignments/assignment2/">
-            Assignment 2
-          </a>
-        </li>
-        <li>
-          <a href="https://nishant640.github.io/csce242/assignments/assignment3/">
-            Assignment 3
-          </a>
-        </li>
-      </ul>
+      <section class="cards">
+        <article class="card">
+          <h3><a href="assignments/assignment01/index.html">Assignment 1 - Basic HTML</a></h3>
+          <img src="images/assignment1.png" alt="Assignment 1 screenshot" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="assignments/assignment02/index.html">Assignment 2 - Basic CSS</a></h3>
+          <img src="images/assignment2.png" alt="Assignment 2 screenshot" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="assignments/assignment03/index.html">Assignment 3 - Page layout</a></h3>
+          <img src="images/assignment3.png" alt="Assignment 3 screenshot" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+        </article>
+      </section>
+
+      <h2>Projects</h2>
+
+      <section class="cards">
+        <article class="card">
+          <h3><a href="../projects/part1/SimpleShop_Part1.pdf">Project Part 1 - Topic PDF</a></h3>
+          <img src="images/project1.png" alt="Project Part 1 screenshot" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus lacus augue. Duis sed tincidunt sapien.</p>
+        </article>
+      </section>
     </main>
 
-    <footer id="footer">
-      <p>&copy; 2026 Nishant Chinnasami</p>
+    <footer>
+      <p>&copy; 2026</p>
     </footer>
-
-  </div>
-</body>
+  </body>
 </html>
