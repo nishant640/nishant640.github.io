@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.utility-bar {
+  background: #000;
+  padding: 8px 24px;
+}
+
+.utility-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.utility-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.brand-bar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+}
+
+.usc-mark {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+}
+
+.usc-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.usc-text .usc-top {
+  font-size: 13px;
+}
+
+.usc-text .usc-bottom {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.brand-right h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: normal;
+  color: #fff;
+}
+
+/* ===== NAV ===== */
+.main-nav {
+  background: #8b000f;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 14px 28px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 20px;
+}
+
+/* ===== FEATURES ===== */
+.feature {
+  position: relative;
+}
+
+.feature img {
+  width: 100%;
+}
+
+.feature-box {
+  position: absolute;
+  top: 40%;
+  right: 40px;
+  background: #8b000f;
+  color: #fff;
+  padding: 24px;
+  width: 300px;
+}
+
+.feature-left .feature-box {
+  left: 40px;
+  right: auto;
+}
+
+.feature-btn {
+  display: inline-block;
+  margin-top: 12px;
+  border: 2px solid #fff;
+  padding: 8px 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== THREE COL ===== */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px 28px;
+}
+
+.three-item {
+  background: #fff;
+  padding: 20px;
+}
+
+.three-item a {
+  color: #8b000f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== BIG FOOTER ===== */
+.usc-footer {
+  background: #8b000f;
+  color: #fff;
+  padding: 40px 28px;
+}
+
+.usc-footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.usc-footer-logo {
+  width: 48px;
+  height: 48px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.usc-footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  padding-top: 30px;
+}
+
+.usc-col h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.usc-col ul {
+  list-style: none;
+}
+
+.usc-col li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* ===== LEGAL ===== */
+.legal-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}
+/* ===== IMAGE STYLING ===== */
+
+.hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.three-col img,
+.section-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ================= STAY CONNECTED ================= */
+
+.stay-connected {
+  background: #f5f5f3;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.stay-connected h2 {
+  color: #73000a;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stay-connected p {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.stay-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.stay-btn {
+  background: #73000a;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.stay-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.stay-left h3 {
+  color: #73000a;
+  margin-bottom: 15px;
+}
+
+.stay-socials span {
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.stay-cols {
+  display: flex;
+  gap: 60px;
+}
+
+.stay-cols ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stay-cols li {
+  margin-bottom: 10px;
+}
+
+/* ================= MOBILE LAYOUT ================= */
+@media (max-width: 768px) {
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  .three-col {
+    flex-direction: column;
+  }
+
+}
