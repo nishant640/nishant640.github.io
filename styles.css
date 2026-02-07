@@ -45,23 +45,28 @@ h2 {
   color: #0a3d91;
 }
 
-/* Card layout */
+/* Cards grid: FORCE 3 columns on desktop (so last row shows 3-3-1) */
 .cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 25px;
-  flex-wrap: wrap;
+  justify-items: center; /* center content inside each grid cell */
   margin-bottom: 40px;
+  align-items: start;
 }
 
 /* Individual card */
 .card {
-  width: 320px;
+  width: 100%;
+  max-width: 320px; /* keeps card size same as before */
   background-color: #e8f1ff; /* soft blue */
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   border: 1px solid #c7dbf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card img {
@@ -81,12 +86,14 @@ h2 {
 .card p {
   font-size: 14px;
   color: #1f3b5c;
+  flex-grow: 1; /* keep button at bottom if card content changes */
 }
 
-/* Links */
-.card a {
+/* Links / buttons */
+.card a,
+.card .btn {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   text-decoration: none;
   color: #ffffff;
   background-color: #0a3d91;
@@ -95,7 +102,8 @@ h2 {
   font-weight: bold;
 }
 
-.card a:hover {
+.card a:hover,
+.card .btn:hover {
   background-color: #062d6f;
 }
 
@@ -108,10 +116,22 @@ footer {
   color: #4a6fa5;
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
+/* RESPONSIVE: keep layout intentional */
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
   .cards {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 20px;
+    padding: 20px;
   }
 }
