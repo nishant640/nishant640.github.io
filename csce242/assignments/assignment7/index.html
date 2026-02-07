@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- required for mobile + removes VS Code warning -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Assignment 7</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="main-content">
+    <h1>Assignment 7</h1>
+    <p>Introduction to JavaScript</p>
+
+    <div class="columns">
+
+      <!-- Geometry -->
+      <div class="card">
+        <h3>Geometry</h3>
+
+        <!-- triangle (hidden by default, shown via JS) -->
+        <div id="triangle" class="triangle" aria-hidden="true"></div>
+
+        <button id="btn-geometry" type="button" title="Show or hide the CSS triangle">Show Triangle</button>
+      </div>
+
+      <!-- Select a Date -->
+      <div class="card">
+        <h3>Select A Date</h3>
+
+        <div class="date-area">
+          <!-- accessible label + title + placeholder (linter wants one of these) -->
+          <label for="dateInput" class="sr-only">Pick a date</label>
+          <input id="dateInput" type="date" aria-label="Pick a date" title="Pick a date" placeholder="YYYY-MM-DD">
+
+          <div id="dateText" class="picked-date" aria-live="polite">
+            You picked the date: <span id="dateValue"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frame Image -->
+      <div class="card">
+        <h3>Frame Image</h3>
+
+        <div id="imgFrame" class="frame-border" aria-hidden="false">
+          <!-- inline SVG element (valid HTML) -->
+          <svg id="sunImg" class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="sun" tabindex="0">
+            <circle cx="60" cy="60" r="20" fill="#ffd54f" stroke="#f2b200" stroke-width="2"/>
+            <path d="M60 10 L60 30" stroke="#f2b200" stroke-width="4"/>
+            <path d="M60 110 L60 90" stroke="#f2b200" stroke-width="4"/>
+            <path d="M10 60 L30 60" stroke="#f2b200" stroke-width="4"/>
+            <path d="M110 60 L90 60" stroke="#f2b200" stroke-width="4"/>
+            <path d="M25 25 L37 37" stroke="#f2b200" stroke-width="4"/>
+            <path d="M95 95 L83 83" stroke="#f2b200" stroke-width="4"/>
+            <path d="M95 25 L83 37" stroke="#f2b200" stroke-width="4"/>
+            <path d="M25 95 L37 83" stroke="#f2b200" stroke-width="4"/>
+          </svg>
+        </div>
+
+        <small class="note">
+          Click the sun to toggle a colored frame
+        </small>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS must be at the bottom -->
+  <script src="script.js"></script>
+</body>
+</html>
