@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conditionals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Conditionals</h1>
+  <p>JavaScript If Statements</p>
+</header>
+
+<nav>
+  <div class="mobile-header">
+    <button id="menuToggle">▼</button>
+  </div>
+
+  <ul id="menuList">
+    <li><a href="#" id="ex1Btn">Exercise 1</a></li>
+    <li><a href="#" id="ex2Btn">Exercise 2</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="ex1">
+  <h2>How many minutes until class?</h2>
+
+  <div class="range-row">
+    <span>0</span>
+    <input type="range" id="range" min="0" max="60" value="30" aria-label="Minutes until class">
+    <span>60</span>
+  </div>
+
+  <p>Minutes: <span id="minutes">30</span></p>
+
+  <div class="box" id="message1"></div>
+</section>
+
+<section id="ex2" class="hidden">
+  <h2>Countdown to class</h2>
+
+  <p>Current time: <span id="time"></span></p>
+
+  <div class="box" id="message2"></div>
+
+  <button id="refresh">Refresh</button>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
