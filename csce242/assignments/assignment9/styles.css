@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding-top: 40px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 5px 0 40px 0;
+    font-weight: normal;
+    color: #555;
+}
+
+.bowl {
+    width: 450px;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* main glass body */
+.bowl::before {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: white;
+    border: 14px solid #e0e0e0;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}
+
+.bowl::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 50px;          
+    border-radius: 50%;
+    background: white;         
+    border: 8px solid #dcdcdc; 
+    left: 50%;
+    top: 10px;                 
+    transform: translateX(-50%);
+}
+
+/* water */
+.water {
+    width: 300px;
+    height: 220px;
+    background: linear-gradient(#4db8e8, #2a98d0);
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -20px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    animation: rise linear infinite;
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-220px);
+        opacity: 0;
+    }
+}
