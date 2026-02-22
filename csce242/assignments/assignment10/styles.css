@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.card {
+  width: 350px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #2f7ecb;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+#songLinks a {
+  display: block;
+  margin: 8px 0;
+  color: black;
+  text-decoration: underline;
+}
+
+#videoBox {
+  margin-top: 20px;
+}
+
+#videoBox iframe {
+  width: 300px;
+  height: 200px;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #a6f1d6;
+}
