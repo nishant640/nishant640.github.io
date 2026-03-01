@@ -55,7 +55,7 @@ body::before{
 .top-right{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:6px;
 }
 
 .hamburger{
@@ -63,6 +63,15 @@ body::before{
   background:none;
   border:none;
   cursor:pointer;
+}
+
+.nav-toggle{
+  font-size:25px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:0;
+  line-height:1;
 }
 
 .mini-badge{
@@ -593,4 +602,29 @@ body::before{
 
 @media (max-width:1100px){
   :root{ --spotlight-players:6; }
+}
+
+@media (max-width:768px){
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    gap:0;
+  }
+
+  .nav-links li{
+    width:100%;
+  }
+
+  .nav-links a{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:12px 0;
+  }
+
+  .nav-links.is-open{
+    display:flex;
+  }
 }

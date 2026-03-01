@@ -15,6 +15,14 @@
     <div class="top-inner">
 
       <div class="top-left">
+        <!-- NEW: hamburger moved here (left of the badge) -->
+        <button class="nav-toggle" type="button"
+          aria-label="Toggle navigation"
+          aria-controls="mainNav"
+          aria-expanded="false">
+          ☰
+        </button>
+
         <img class="mini-badge" src="images/mini.png" alt="mini badge">
       </div>
 
@@ -32,22 +40,22 @@
     </div>
   </header>
 
-<nav class="navrow" aria-label="Main navigation">
-  <ul class="nav-links">
-    <li><a href="../news/">News</a></li>
+  <nav class="navrow" aria-label="Main navigation">
+    <ul class="nav-links" id="mainNav">
+      <li><a href="../news/">News</a></li>
 
-    <li>
-      <a href="https://play.realmadrid.com/home?itm_campaign=rmcom-menuheader_all_acceso_ott_en&language=en-US"
-         target="_blank" rel="noopener noreferrer">
-        RM Play
-      </a>
-    </li>
+      <li>
+        <a href="https://play.realmadrid.com/home?itm_campaign=rmcom-menuheader_all_acceso_ott_en&language=en-US"
+           target="_blank" rel="noopener noreferrer">
+          RM Play
+        </a>
+      </li>
 
-    <li><a href="#player-spotlight">Players</a></li>
-    <li><a href="../matches/">Matches</a></li>
-    <li><a href="../login/">Login</a></li>
-  </ul>
-</nav>
+      <li><a href="#player-spotlight">Players</a></li>
+      <li><a href="../matches/">Matches</a></li>
+      <li><a href="../login/">Login</a></li>
+    </ul>
+  </nav>
 
   <section class="hero">
     <div class="hero-overlay"></div>
@@ -70,8 +78,7 @@
 
   <section class="feature-cards">
 
-    <a href="https://www.google.com/search?q=real+madrid+latest+results"
-       target="_blank" rel="noopener noreferrer">
+    <a href="../matches/">
       <div class="feature-card">
         <img class="feature-img" src="images/latest.png" alt="Latest match highlights">
         <div class="feature-content">
@@ -80,8 +87,7 @@
       </div>
     </a>
 
-    <a href="https://www.google.com/search?q=real+madrid+upcoming+fixtures"
-       target="_blank" rel="noopener noreferrer">
+    <a href="../matches/#upcoming">
       <div class="feature-card">
         <img class="feature-img" src="images/upcoming.png" alt="Upcoming match preview">
         <div class="feature-content">
@@ -90,8 +96,7 @@
       </div>
     </a>
 
-    <a href="https://www.google.com/search?q=real+madrid+news"
-       target="_blank" rel="noopener noreferrer">
+    <a href="../news/">
       <div class="feature-card">
         <img class="feature-img" src="images/news.png" alt="Club press conference">
         <div class="feature-content">
@@ -99,7 +104,7 @@
         </div>
       </div>
     </a>
-
+  
   </section>
 
 
@@ -465,6 +470,20 @@
 
     </div>
   </footer>
+
+  <!-- NEW: toggle script -->
+  <script>
+    (function () {
+      var btn = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("mainNav");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", function () {
+        var isOpen = menu.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    })();
+  </script>
 
 </body>
 </html>

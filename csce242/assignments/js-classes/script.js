@@ -61,7 +61,7 @@ let songs = [
     "Rather Lie",
     "Playboi Carti",
     "Whole Lotta Red",
-    2020,
+    2025,
     "Rap",
     "images/carti.png",
     "fYD7YsSRHOY"
