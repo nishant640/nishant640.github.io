@@ -16,6 +16,13 @@
     <div class="top-inner">
 
       <div class="top-left">
+        <button class="nav-toggle" type="button"
+          aria-label="Toggle navigation"
+          aria-controls="mainNav"
+          aria-expanded="false">
+          ☰
+        </button>
+
         <img class="mini-badge" src="../homepage/images/mini.png" alt="mini badge">
       </div>
 
@@ -35,7 +42,7 @@
 
   <!-- SAME NAV  -->
   <nav class="navrow" aria-label="Main navigation">
-    <ul class="nav-links">
+    <ul class="nav-links" id="mainNav">
       <li><a class="active" href="../news/index.html">News</a></li>
 
       <li>
@@ -210,17 +217,17 @@
     <p>Subscribe to our newsletter and get the latest Real Madrid news delivered straight to your inbox.</p>
 
     <div class="newsletter-box">
-  <input type="email" placeholder="Enter your email" required>
-  <button>Subscribe</button>
-</div>
+      <input type="email" placeholder="Enter your email" required>
+      <button>Subscribe</button>
+    </div>
+  </section>
 
-<section class="hala-quote">
+  <section class="hala-quote">
     <div class="hala-container">
       <h2>HALA MADRID Y NADA MÁS.</h2>
       <p>The pride. The history. The greatest club in the world.</p>
     </div>
   </section>
-
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -266,6 +273,19 @@
 
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("mainNav");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", function () {
+        var isOpen = menu.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    })();
+  </script>
 
 </body>
 </html>

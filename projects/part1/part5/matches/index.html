@@ -15,6 +15,13 @@
     <div class="top-inner">
 
       <div class="top-left">
+        <button class="nav-toggle" type="button"
+          aria-label="Toggle navigation"
+          aria-controls="mainNav"
+          aria-expanded="false">
+          ☰
+        </button>
+
         <img class="mini-badge" src="images/mini.png" alt="mini badge">
       </div>
 
@@ -33,23 +40,23 @@
   </header>
 
   <nav class="navrow">
-  <ul class="nav-links">
-    <li><a href="../news/index.html">News</a></li>
+    <ul class="nav-links" id="mainNav">
+      <li><a href="../news/index.html">News</a></li>
 
-    <li>
-  <a href="https://play.realmadrid.com/home?itm_campaign=rmcom-menuheader_all_acceso_ott_en&language=en-US"
-     target="_blank" rel="noopener noreferrer">
-    RM Play
-  </a>
-</li>
+      <li>
+        <a href="https://play.realmadrid.com/home?itm_campaign=rmcom-menuheader_all_acceso_ott_en&language=en-US"
+           target="_blank" rel="noopener noreferrer">
+          RM Play
+        </a>
+      </li>
 
-    <!-- ADD THIS -->
-    <li><a href="../homepage/index.html#player-spotlight">Players</a></li>
+      <li><a href="../homepage/index.html#player-spotlight">Players</a></li>
 
-    <li><a class="active" href="#">Matches</a></li>
-    <li><a href="../login/index.html">Login</a></li>
-  </ul>
-</nav>
+      <li><a class="active" href="#">Matches</a></li>
+      <li><a href="../login/index.html">Login</a></li>
+    </ul>
+  </nav>
+
   <section class="matches-hero">
     <div class="matches-hero-inner">
       <h1>MATCHES</h1>
@@ -231,3 +238,19 @@
 
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("mainNav");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", function () {
+        var isOpen = menu.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    })();
+  </script>
+
+</body>
+</html>
