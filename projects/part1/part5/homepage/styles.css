@@ -334,6 +334,10 @@ body::before{
   color:#666;
 }
 
+@media (min-width:900px){
+  .player-photo{ height:190px; }
+}
+
 /* "All players" special card styling */
 .all-players-card .card-media{
   display:flex;
