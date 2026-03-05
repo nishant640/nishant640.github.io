@@ -150,37 +150,3 @@ footer {
     padding: 20px;
   }
 }
-
-.final-card{
-  text-align:center;
-}
-
-.final-section{
-  margin:18px 0;
-}
-
-.final-title{
-  font-weight:600;
-  margin-bottom:8px;
-  color:#444;
-}
-
-.final-buttons{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
-
-.final-buttons a{
-  display:block;
-  background:#0b2f6b;
-  color:#fff;
-  padding:10px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.final-buttons a:hover{
-  background:#154a9c;
-}
