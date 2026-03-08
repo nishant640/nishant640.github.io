@@ -54,7 +54,7 @@
     </div>
   </section>
 
-    <section class="quote-section">
+  <section class="quote-section">
     <div class="quote-inner">
       <p class="quote-text">
         "This badge demands everything from you. That’s why it’s the greatest club in the world."
@@ -62,8 +62,6 @@
       <p class="quote-author">— Sergio Ramos</p>
     </div>
   </section>
-
-
 
   <main class="players-wrap">
 
@@ -331,72 +329,14 @@
     </div>
   </footer>
 
-  <!-- player lightbox -->
   <div class="pbox" id="pbox">
     <div class="pbox-card">
       <button class="pbox-x" id="pboxX" type="button">X</button>
-      <img id="pboxImg" src="" alt="">
+      <img id="pboxImg" src="" alt="Player image">
       <p id="pboxCap"></p>
     </div>
   </div>
 
-  <script>
-    (function () {
-      var btn = document.querySelector(".nav-toggle");
-      var menu = document.getElementById("mainNav");
-      if (!btn || !menu) return;
-
-      btn.addEventListener("click", function () {
-        var isOpen = menu.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      });
-    })();
-  </script>
-
-  <script>
-    (function () {
-      var box = document.getElementById("pbox");
-      var card = box ? box.querySelector(".pbox-card") : null;
-      var imgBox = document.getElementById("pboxImg");
-      var cap = document.getElementById("pboxCap");
-      var x = document.getElementById("pboxX");
-
-      if (!box || !card || !imgBox || !cap || !x) return;
-
-      var players = document.querySelectorAll(".rm-card:not(.rm-all)");
-
-      players.forEach(function (p) {
-        p.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          var pic = p.querySelector("img");
-          if (!pic) return;
-
-          imgBox.src = pic.src;
-
-          var name = p.getAttribute("aria-label") || pic.alt || "";
-          cap.textContent = name;
-
-          box.classList.add("show");
-        });
-      });
-
-      function closeIt() {
-        box.classList.remove("show");
-        imgBox.src = "";
-      }
-
-      x.addEventListener("click", closeIt);
-
-      box.addEventListener("click", function (e) {
-        if (e.target === box) closeIt();
-      });
-
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeIt();
-      });
-    })();
-  </script>
-
+  <script src="players.js"></script>
 </body>
 </html>
