@@ -43,14 +43,16 @@
       var formData = new FormData(form);
 
       try {
+
         var response = await fetch("https://formsubmit.co/ajax/nishantc@email.sc.edu", {
-          method: "POST",
-          headers: {
-            "Accept": "application/json"
-          },
-          body: formData
+            method: "POST",
+            headers: {
+                "Accept": "application/json"
+            },
+            body: formData
         });
 
+        
         if (response.ok) {
           formMessage.textContent = "Message sent successfully!";
           formMessage.classList.add("success");
