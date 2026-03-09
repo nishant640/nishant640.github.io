@@ -1,69 +1,48 @@
-(function () {
-  var btn = document.querySelector(".nav-toggle");
-  var menu = document.getElementById("mainNav");
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
-  if (btn && menu) {
-    btn.addEventListener("click", function () {
-      var isOpen = menu.classList.toggle("is-open");
-      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
+contactForm.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  if (formMessage) {
+    formMessage.textContent = "Sending...";
+    formMessage.className = "form-message";
   }
 
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest(".player-card");
-    if (!a) return;
-
-    if (a.getAttribute("href") === "#") {
-      e.preventDefault();
-    }
-
-    var id = a.dataset.player;
-    if (id) {
-      console.log("player clicked:", id);
-    }
-  });
-
-  var form = document.getElementById("contactForm");
-  var formMessage = document.getElementById("formMessage");
-
-  if (form && formMessage) {
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      formMessage.textContent = "";
-      formMessage.className = "form-message";
-
-      if (!form.checkValidity()) {
-        formMessage.textContent = "Please fill out all fields correctly.";
-        formMessage.classList.add("error");
-        form.reportValidity();
-        return;
-      }
-
-      var formData = new FormData(form);
-
-      try {
+  try {
     const response = await fetch("https://formsubmit.co/ajax/nishantmc03@gmail.com", {
-        method: "POST",
-        headers: {
-            Accept: "application/json"
-        },
-        body: formData
+      method: "POST",
+      headers: {
+        Accept: "application/json"
+      },
+      body: formData
     });
 
-    const result = await response.json();
-    console.log("status:", response.status);
-    console.log("result:", result);
+    const data = await response.json();
+
+    console.log("STATUS:", response.status);
+    console.log("RESPONSE:", data);
 
     if (response.ok) {
-        alert("Message sent successfully");
+      if (formMessage) {
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.className = "form-message success";
+      }
+      contactForm.reset();
     } else {
-        alert("Something went wrong");
+      if (formMessage) {
+        formMessage.textContent = "Something went wrong.";
+        formMessage.className = "form-message error";
+      }
     }
-} catch (error) {
-    console.log("error:", error);
-    alert("Error sending message");
-}
-    });
+  } catch (error) {
+    console.log("ERROR:", error);
+
+    if (formMessage) {
+      formMessage.textContent = "Error sending message.";
+      formMessage.className = "form-message error";
+    }
   }
-})();
+});
