@@ -43,28 +43,27 @@
       var formData = new FormData(form);
 
       try {
+    const response = await fetch("https://formsubmit.co/ajax/nishantmc03@gmail.com", {
+        method: "POST",
+        headers: {
+            Accept: "application/json"
+        },
+        body: formData
+    });
 
-        var response = await fetch("https://formsubmit.co/ajax/nishantmc03@gmail.com", {
-            method: "POST",
-            headers: {
-                "Accept": "application/json"
-            },
-            body: formData
-        });
+    const result = await response.json();
+    console.log("status:", response.status);
+    console.log("result:", result);
 
-
-        if (response.ok) {
-          formMessage.textContent = "Message sent successfully!";
-          formMessage.classList.add("success");
-          form.reset();
-        } else {
-          formMessage.textContent = "There was a problem sending your message.";
-          formMessage.classList.add("error");
-        }
-      } catch (error) {
-        formMessage.textContent = "There was a problem sending your message.";
-        formMessage.classList.add("error");
-      }
+    if (response.ok) {
+        alert("Message sent successfully");
+    } else {
+        alert("Something went wrong");
+    }
+} catch (error) {
+    console.log("error:", error);
+    alert("Error sending message");
+}
     });
   }
 })();
