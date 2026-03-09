@@ -44,7 +44,7 @@
 
       try {
 
-        var response = await fetch("https://formsubmit.co/ajax/nishantc@email.sc.edu", {
+        var response = await fetch("https://formsubmit.co/ajax/nishantmc03@gmail.com", {
             method: "POST",
             headers: {
                 "Accept": "application/json"
@@ -52,7 +52,7 @@
             body: formData
         });
 
-        
+
         if (response.ok) {
           formMessage.textContent = "Message sent successfully!";
           formMessage.classList.add("success");
