@@ -15,7 +15,6 @@
     <div class="top-inner">
 
       <div class="top-left">
-        <!-- NEW: hamburger moved here (left of the badge) -->
         <button class="nav-toggle" type="button"
           aria-label="Toggle navigation"
           aria-controls="mainNav"
@@ -43,7 +42,6 @@
   <nav class="navrow" aria-label="Main navigation">
     <ul class="nav-links" id="mainNav">
       <li><a href="../news/">News</a></li>
-
       <li><a href="../players/">Players</a></li>
       <li><a href="../matches/">Matches</a></li>
       <li><a href="../login/">Login</a></li>
@@ -58,7 +56,6 @@
     </div>
   </section>
 
-
   <section class="quote-section">
     <div class="quote-inner">
       <p class="quote-text">
@@ -67,7 +64,6 @@
       <p class="quote-author">— Santiago Bernabéu</p>
     </div>
   </section>
-
 
   <section class="feature-cards">
 
@@ -97,9 +93,8 @@
         </div>
       </div>
     </a>
-  
-  </section>
 
+  </section>
 
   <section id="player-spotlight" class="player-spotlight">
     <div class="container">
@@ -124,7 +119,6 @@
           </div>
         </a>
 
-
         <a class="player-card" role="listitem" data-player="2"
            href="https://www.realmadrid.com/en-US/football/first-team/players/vinicius-paixao-de-oliveira-junior"
            target="_blank" rel="noopener noreferrer">
@@ -139,7 +133,6 @@
             <div class="player-pos">Forward</div>
           </div>
         </a>
-
 
         <a class="player-card" role="listitem" data-player="3"
            href="https://www.realmadrid.com/en-US/football/first-team/players/kylian-mbappe"
@@ -156,7 +149,6 @@
           </div>
         </a>
 
-
         <a class="player-card" role="listitem" data-player="4"
            href="https://www.realmadrid.com/en-US/football/first-team/players/antonio-rudiger"
            target="_blank" rel="noopener noreferrer">
@@ -171,7 +163,6 @@
             <div class="player-pos">Defender</div>
           </div>
         </a>
-
 
         <a class="player-card" role="listitem" data-player="5"
            href="https://www.realmadrid.com/en-US/football/first-team/players/ferland-mendy"
@@ -188,7 +179,6 @@
           </div>
         </a>
 
-
         <a class="player-card" role="listitem" data-player="6"
            href="https://www.realmadrid.com/en-US/football/first-team/players/dean-huijsen"
            target="_blank" rel="noopener noreferrer">
@@ -203,7 +193,6 @@
             <div class="player-pos">Defender</div>
           </div>
         </a>
-
 
         <a class="player-card all-players-card" role="listitem"
            href="https://www.realmadrid.com/en-US/football/first-team/players"
@@ -225,23 +214,7 @@
 
       </div>
     </div>
-
-    <script>
-      document.addEventListener("click", function(e){
-        var a = e.target.closest(".player-card");
-        if(!a) return;
-
-        if(a.getAttribute("href") === "#"){
-          e.preventDefault();
-        }
-
-        var id = a.dataset.player;
-        console.log("player clicked:", id);
-      });
-    </script>
-
   </section>
-
 
   <section class="track-record">
     <h2 class="track-title">A LEGENDARY TRACK RECORD</h2>
@@ -260,7 +233,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="shop-section">
     <h2 class="shop-title">SHOP REAL MADRID</h2>
@@ -298,11 +270,50 @@
     </a>
   </section>
 
+  <section class="iframe-contact-section">
+    <div class="iframe-contact-wrap">
+
+      <div class="iframe-box">
+        <h2 class="iframe-title">WATCH REAL MADRID</h2>
+        <p class="iframe-sub">A featured Real Madrid video right on the homepage.</p>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Real Madrid Video"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <h2 class="contact-title">CONTACT ME</h2>
+        <p class="contact-sub">Send a message and I will get it by email.</p>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
 
   <section class="lv-banner">
     <div class="lv-overlay"></div>
   </section>
-
 
   <section class="hala-quote">
     <div class="hala-container">
@@ -310,7 +321,6 @@
       <p>The pride. The history. The greatest club in the world.</p>
     </div>
   </section>
-
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -357,19 +367,6 @@
     </div>
   </footer>
 
-  <!-- NEW: toggle script -->
-  <script>
-    (function () {
-      var btn = document.querySelector(".nav-toggle");
-      var menu = document.getElementById("mainNav");
-      if (!btn || !menu) return;
-
-      btn.addEventListener("click", function () {
-        var isOpen = menu.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      });
-    })();
-  </script>
-
+  <script src="homepage.js"></script>
 </body>
 </html>
