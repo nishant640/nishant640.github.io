@@ -639,24 +639,15 @@ body::before{
   margin:0 auto;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:stretch;
+  gap:40px;
+  align-items:start;
 }
 
 .iframe-box,
 .contact-box{
   background:transparent;
   border-radius:18px;
-  padding:30px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
-  color:#fff;
-}
-
-.iframe-box h2,
-.iframe-box p,
-.contact-box h2,
-.contact-box p,
-.contact-box label{
+  padding:0;
   color:#fff;
 }
 
@@ -664,13 +655,22 @@ body::before{
 .contact-title{
   font-family:'Michroma', sans-serif;
   font-size:28px;
+  line-height:1.2;
   margin:0 0 12px 0;
+  color:#fff;
 }
 
 .iframe-sub,
 .contact-sub{
   margin:0 0 20px 0;
   line-height:1.6;
+  color:#fff;
+}
+
+.contact-box .contact-title,
+.contact-box .contact-sub,
+.contact-form label{
+  color:#fff;
 }
 
 .video-frame{
