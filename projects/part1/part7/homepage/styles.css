@@ -72,6 +72,7 @@ body::before{
   cursor:pointer;
   padding:0;
   line-height:1;
+  display:none;
 }
 
 .mini-badge{
@@ -747,5 +748,11 @@ body::before{
 @media (max-width:900px){
   .iframe-contact-wrap{
     grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:768px){
+  .nav-toggle{
+    display:block;
   }
 }
