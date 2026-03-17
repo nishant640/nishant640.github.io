@@ -169,6 +169,14 @@ body::before{
   border:1px solid var(--line);
   border-radius:10px;
   overflow:hidden;
+  cursor:pointer;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.big-story:hover,
+.small-story:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
 .big-story{ flex:2.1; }
@@ -232,6 +240,13 @@ body::before{
   border:1px solid var(--line);
   border-radius:10px;
   overflow:hidden;
+  cursor:pointer;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
 .news-card img{

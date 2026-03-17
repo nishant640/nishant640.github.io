@@ -268,17 +268,23 @@
   </footer>
 
   <script>
-    (function () {
-      var btn = document.querySelector(".nav-toggle");
-      var menu = document.getElementById("mainNav");
-      if (!btn || !menu) return;
+  (function () {
+    var btn = document.querySelector(".nav-toggle");
+    var menu = document.getElementById("mainNav");
+    if (!btn || !menu) return;
 
-      btn.addEventListener("click", function () {
-        var isOpen = menu.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      });
-    })();
-  </script>
+    btn.addEventListener("click", function () {
+      var isOpen = menu.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  })();
+
+  document.querySelectorAll(".news-card, .big-story, .small-story").forEach(function(card) {
+    card.addEventListener("click", function() {
+      window.location.href = "#";
+    });
+  });
+</script>
 
 </body>
 </html>
