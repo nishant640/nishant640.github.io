@@ -417,6 +417,7 @@ body::before{
   margin-bottom:30px;
   letter-spacing:2px;
   color:#fff;
+  text-align:center; 
 }
 
 .shop-card{
