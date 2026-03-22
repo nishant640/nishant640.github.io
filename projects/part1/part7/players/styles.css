@@ -431,7 +431,7 @@ body::before{
 
 .pbox-card{
   width:min(520px, 92vw);
-  background:#0f0f10;
+  background:linear-gradient(145deg, #0f111a, #1a1f35);
   border-radius:14px;
   padding:18px;
   box-shadow:0 18px 60px rgba(0,0,0,0.45);
@@ -442,17 +442,52 @@ body::before{
   width:100%;
   display:block;
   border-radius:12px;
-  background:rgba(255,255,255,0.05);
+  background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
   padding:12px;
 }
 
-#pboxCap{
+.pbox-info{
   color:#fff;
-  margin:10px 0 0;
+  margin:12px 0 0;
   text-align:center;
-  font-size:14px;
+}
+
+.pbox-num{
+  font-family:'Michroma', sans-serif;
+  font-size:28px;
+  line-height:1;
+  color:#d4af37;
+  margin-bottom:10px;
+}
+
+.pbox-info h2{
+  margin:0 0 8px;
+  font-family:'Michroma', sans-serif;
+  font-size:22px;
   letter-spacing:1px;
-  opacity:0.92;
+  color:#fff;
+}
+
+.pbox-pos{
+  color:rgba(255,255,255,0.82);
+  margin:0 0 14px;
+  font-size:13px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.pbox-career{
+  color:#f3f3f3;
+  margin:0;
+  font-size:13px;
+  line-height:1.6;
+  background:rgba(255,255,255,0.06);
+  padding:12px;
+  border-radius:10px;
+}
+
+.pbox-career strong{
+  color:#d4af37;
 }
 
 .pbox-x{
